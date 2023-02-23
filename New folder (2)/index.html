@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en Línea | ConfiguroWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo.png">
+    <style>
+
+        @media all and (min-width: 300px) and  (max-width: 1000px) {
+                .quiz_box , .info_box
+                {width: 300px;}
+        }
+            </style>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button> Take Exam</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>قواعد الامتحان </span></div>
+        <div class="info-list">
+            <div class="info">1. سيكون لديك <span>60 ثانيه</span> فقط للإجابة على كل سؤال.</div>
+            <div class = "info"> 2. بمجرد تحديد إجابتك ، لا يمكن التراجع عنها. </div>
+                <div class = "info"> 3. لا يمكنك تحديد أي خيار بمجرد انتهاء الوقت. </div>
+                <div class = "info"> 4. لا يمكنك الخروج من الاختبار بينما الوقت قيد التشغيل. </div>
+                <div class = "info"> 5. ستحصل على نقاط بناءً على إجاباتك الصحيحة. </div>
+        </div>
+        <div class="buttons">
+            <button class="quit">الغاء</button>
+            <button class="restart">متابعة</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title"> الامتحان عبر الإنترنت</div>
+            <div class="timer">
+                <div class="time_left_txt">الوقت المتبقي</div>
+                <div class="timer_sec">60</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">السؤال التالي</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">لقد انتهيت من امتحانك!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">مرة اخري</button>
+            <button class="quit">مغادرة</button>
+        </div>
+    </div>
+
+    
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+    <footer class="footer">  <p class="copyright-text">
+        <a href="#" class="copyright-link"></a>Developer / Youssef El-Sabahi Ahmed © 2022
+      </p>
+      </footer>
+
+
+</body>
+</html>
